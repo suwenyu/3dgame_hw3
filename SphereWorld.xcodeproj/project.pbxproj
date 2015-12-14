@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E0D58EA1827EA2E00A1680B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D58E91827EA2E00A1680B /* main.cpp */; };
 		4E0D58EC1827EA2E00A1680B /* SphereWorld.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E0D58EB1827EA2E00A1680B /* SphereWorld.1 */; };
+		4E0D58F41827EA3500A1680B /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0D58F21827EA3500A1680B /* GLUT.framework */; };
+		4E0D58F51827EA3500A1680B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0D58F31827EA3500A1680B /* OpenGL.framework */; };
+		4E0D58F71827EA3800A1680B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0D58F61827EA3800A1680B /* Carbon.framework */; };
+		4E0D58F91827EA4500A1680B /* sphereworld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D58F81827EA4500A1680B /* sphereworld.cpp */; };
+		4E0D59001827EA5B00A1680B /* GLee.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D58FA1827EA5B00A1680B /* GLee.c */; };
+		4E0D59011827EA5B00A1680B /* gltools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D58FC1827EA5B00A1680B /* gltools.cpp */; };
+		4E0D59021827EA5B00A1680B /* math3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D58FE1827EA5B00A1680B /* math3d.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +32,19 @@
 
 /* Begin PBXFileReference section */
 		4E0D58E61827EA2E00A1680B /* SphereWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SphereWorld; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E0D58E91827EA2E00A1680B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		4E0D58EB1827EA2E00A1680B /* SphereWorld.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SphereWorld.1; sourceTree = "<group>"; };
+		4E0D58F21827EA3500A1680B /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		4E0D58F31827EA3500A1680B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		4E0D58F61827EA3800A1680B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		4E0D58F81827EA4500A1680B /* sphereworld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sphereworld.cpp; sourceTree = "<group>"; };
+		4E0D58FA1827EA5B00A1680B /* GLee.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GLee.c; sourceTree = "<group>"; };
+		4E0D58FB1827EA5B00A1680B /* GLee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLee.h; sourceTree = "<group>"; };
+		4E0D58FC1827EA5B00A1680B /* gltools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gltools.cpp; sourceTree = "<group>"; };
+		4E0D58FD1827EA5B00A1680B /* gltools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gltools.h; sourceTree = "<group>"; };
+		4E0D58FE1827EA5B00A1680B /* math3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = math3d.cpp; sourceTree = "<group>"; };
+		4E0D58FF1827EA5B00A1680B /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		4E0D59031827EA7800A1680B /* glFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glFrame.h; sourceTree = "<group>"; };
+		EF367FD51C1C881100F14A7E /* glm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glm.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +52,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E0D58F71827EA3800A1680B /* Carbon.framework in Frameworks */,
+				4E0D58F41827EA3500A1680B /* GLUT.framework in Frameworks */,
+				4E0D58F51827EA3500A1680B /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +64,9 @@
 		4E0D58DD1827EA2E00A1680B = {
 			isa = PBXGroup;
 			children = (
+				4E0D58F61827EA3800A1680B /* Carbon.framework */,
+				4E0D58F21827EA3500A1680B /* GLUT.framework */,
+				4E0D58F31827EA3500A1680B /* OpenGL.framework */,
 				4E0D58E81827EA2E00A1680B /* SphereWorld */,
 				4E0D58E71827EA2E00A1680B /* Products */,
 			);
@@ -60,7 +83,15 @@
 		4E0D58E81827EA2E00A1680B /* SphereWorld */ = {
 			isa = PBXGroup;
 			children = (
-				4E0D58E91827EA2E00A1680B /* main.cpp */,
+				4E0D58F81827EA4500A1680B /* sphereworld.cpp */,
+				4E0D58FA1827EA5B00A1680B /* GLee.c */,
+				4E0D58FB1827EA5B00A1680B /* GLee.h */,
+				4E0D58FC1827EA5B00A1680B /* gltools.cpp */,
+				4E0D58FD1827EA5B00A1680B /* gltools.h */,
+				4E0D58FE1827EA5B00A1680B /* math3d.cpp */,
+				4E0D58FF1827EA5B00A1680B /* math3d.h */,
+				4E0D59031827EA7800A1680B /* glFrame.h */,
+				EF367FD51C1C881100F14A7E /* glm.h */,
 				4E0D58EB1827EA2E00A1680B /* SphereWorld.1 */,
 			);
 			path = SphereWorld;
@@ -117,7 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E0D58EA1827EA2E00A1680B /* main.cpp in Sources */,
+				4E0D59021827EA5B00A1680B /* math3d.cpp in Sources */,
+				4E0D59001827EA5B00A1680B /* GLee.c in Sources */,
+				4E0D58F91827EA4500A1680B /* sphereworld.cpp in Sources */,
+				4E0D59011827EA5B00A1680B /* gltools.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +259,7 @@
 				4E0D58F11827EA2E00A1680B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
